@@ -4,7 +4,7 @@ if (Meteor.isClient) {
       return "Aye!";
     },
     content: function () {
-      return Template.hello;
+      return "Content...";
     }
   });
 

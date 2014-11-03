@@ -1,0 +1,24 @@
+body {
+  padding-top: 100px;
+  background-color: #fdfdfd; }
+
+.navbar-cell {
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #e6e6e6; }
+
+#brand {
+  color: #999999;
+  font-size: 26.66667px;
+  line-height: 26.66667px;
+  height: 80px;
+  padding: 26.66667px 0;
+  font-family: 'permanent_markerregular'; }
+
+.headline {
+  text-align: center;
+  padding: 0; }
+
+.headline > h1 {
+  font-size: 4em;
+  font-family: 'playtimewithhottoddiesRg';
+  margin: 1.2em 0 1.2em 0; }
