@@ -1,5 +1,5 @@
 var headline = "Award the team",
-    content_template = "new_voting",
+    content_template = "list_teams",
     button = "QQQ",
     page_state_dep = new Tracker.Dependency();
 

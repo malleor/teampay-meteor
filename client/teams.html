@@ -1,0 +1,16 @@
+<template name="list_teams">
+    <h3>Teams:</h3>
+    {{#each teams }}
+    <div>
+        <h4><a href="#" class="team-header" team="{{ _id }}">{{ name }}:</a></h4>
+        {{#each members }}
+        <p>
+            {{ member_name . }}
+            {{!-- #if is_leader . }}
+            <small>(leader)</small>
+            {{/if --}}
+        </p>
+        {{/each}}
+    </div>
+    {{/each}}
+</template>
