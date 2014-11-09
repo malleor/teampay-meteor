@@ -1,5 +1,5 @@
-var headline = "Headline",
-    content_template = "ABC",
+var headline = "Award the team",
+    content_template = "new_voting",
     button = "QQQ",
     page_state_dep = new Tracker.Dependency();
 
@@ -22,7 +22,6 @@ Template.page.helpers({
 
 Template.page.events({
   'click #QQQ': function(){
-    console.log("switching to QQQ");
     content_template = "QQQ";
     button = "FUU";
     page_state_dep.changed();
