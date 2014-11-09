@@ -10,6 +10,13 @@ Meteor.startup(function () {
                 {name: 'Ace'}
             ]
         };
+
+        // insert members
+        initial_team.members = _.map(initial_team.members, function(member){
+            return Members.insert(member);
+        });
+
+        // insert the team
         Teams.insert(initial_team, function () {
             console.log('Added the initial team to the DB.');
         });
