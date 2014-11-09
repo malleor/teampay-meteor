@@ -17,12 +17,18 @@
         <!-- BODY -->
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
-                {{ content }}
+                {{#with content }}
+                    {{> .}}
+                {{/with}}
             </div>
+            <button id="{{ button }}">Switch to {{ button }}</button>
         </div>
     </div>
 </template>
 
+<template name="ABC"><i>ABC</i></template>
+<template name="FUU"><i>FUU</i></template>
+<template name="QQQ"><i>QQQ</i></template>
 
 <body>
 <div class="navbar navbar-fixed-top" role="navigation">
